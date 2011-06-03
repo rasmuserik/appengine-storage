@@ -7,7 +7,7 @@ import time
 class Entry(db.Model):
     realm = db.StringProperty(required=True)
     name = db.StringProperty(required=True)
-    value = db.StringProperty(required=True)
+    value = db.TextProperty(required=True)
     date = db.FloatProperty(required=True)
 
 form = cgi.FieldStorage()
