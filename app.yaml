@@ -7,5 +7,7 @@ builtins:
 - datastore_admin: on
 
 handlers:
+- url: /timelog.*
+  script: timelog/timelog.py
 - url: /.*
   script: storage.py
