@@ -9,5 +9,7 @@ builtins:
 handlers:
 - url: /timelog.*
   script: timelog/timelog.py
+- url: /bettinatimelog.*
+  script: timelog-bettina/timelog.py
 - url: /.*
   script: storage.py
