@@ -26,7 +26,7 @@ if "action" in form:
     entry.put()
     result = [entry]
 else:
-    result = db.GqlQuery("SELECT * FROM TimeLogEntry WHERE time <= :1 AND time > :2", time, time - 7*24*60*60)
+    result = db.GqlQuery("SELECT * FROM TimeLogEntry WHERE time <= :1 AND time > :2", time, time - 30*24*60*60)
 
 result = ['{time:%d,action:"%s"}' % (x.time, x.action) for x in result]
 result = "[" + ",".join(result) + "]"
