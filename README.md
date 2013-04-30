@@ -1,4 +1,4 @@
-# Simple storage engine that runs on google appengine
+# ![logo](https://solsort.com/_logo.png) Simple storage engine that runs on google appengine
 
 Sample usage:
     
